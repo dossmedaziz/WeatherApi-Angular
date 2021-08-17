@@ -1,0 +1,27 @@
+
+  <div class="conatiner parent " *ngIf="data">
+   <div class="row first">
+    <div class="col-sm-10 left">
+      <h1>{{ getCurrent().currentTime | date:'shortTime'}}</h1>
+      <h2>{{ getCurrent().currentTime | date:'fullDate'}}</h2>
+      <div class="card">
+        <p>Humidity :{{ getCurrent().humidity}}%</p>
+        <p>Presure :{{ getCurrent().pressure}} </p>
+        <p>Wind speed : {{ getCurrent().wind_speed}} </p>
+        <p>Sunrise : {{ getCurrent().sunrise | date:'shortTime'}}  </p>
+        <p>Sunset : {{ getCurrent().sunset | date:'shortTime'}}  </p>
+      </div>
+    </div>
+
+    <div class="col-sm-2">
+      <h3>{{ getCurrent().timezone}} </h3>
+      <p>{{getCurrent().lat}}N {{ getCurrent().lon}}E</p>
+    </div>
+  </div>
+
+   <div class="row">
+     <div class="col-sm-12 bottom">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, nobis! Vel a error asperiores ratione esse, alias earum quasi voluptates ipsa accusantium autem tempore tempora porro aperiam ab quas aliquam.</p>
+     </div>
+   </div>
+  </div>
