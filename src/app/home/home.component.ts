@@ -35,9 +35,8 @@ data
     then( data =>{
  
       this.data = data
-      
-       this.getCurrent()
-      
+    console.log(data);
+          
               })
   }
 
@@ -55,9 +54,7 @@ data
       timezone : this.data.timezone,
       lat : this.data.lat,
       lon: this.data.lon
-    }
-    console.log(result);
-    
+    }    
     return result
     
   }
